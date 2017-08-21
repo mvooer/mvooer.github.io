@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+
+
+  <html class="light page-post">
+
+
+<head>
+  <meta charset="utf-8">
+  
+  <title>Linux 填坑记 | I/O - mvooer</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+    <meta name="keywords" content="linux,freedom,note," />
+  
+
+  <meta name="description" content="常用命令123nanoapt-get update  # apt-get upgradeapt-get autoclean atuoremove  Ubuntu/Debian升级内核如果系统是 64 位，则下载 amd64 的 linux-image 中含有 generic 这个 deb 包如果系统是 32 位，则下载 i386 的 linux-image 中含有 generic 这个 deb 包">
+<meta name="keywords" content="linux,freedom,note">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Linux 填坑记">
+<meta property="og:url" content="/K/08/02/linux/index.html">
+<meta property="og:site_name" content="I&#x2F;O - mvooer">
+<meta property="og:description" content="常用命令123nanoapt-get update  # apt-get upgradeapt-get autoclean atuoremove  Ubuntu/Debian升级内核如果系统是 64 位，则下载 amd64 的 linux-image 中含有 generic 这个 deb 包如果系统是 32 位，则下载 i386 的 linux-image 中含有 generic 这个 deb 包">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2017-08-16T08:33:01.526Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Linux 填坑记">
+<meta name="twitter:description" content="常用命令123nanoapt-get update  # apt-get upgradeapt-get autoclean atuoremove  Ubuntu/Debian升级内核如果系统是 64 位，则下载 amd64 的 linux-image 中含有 generic 这个 deb 包如果系统是 32 位，则下载 i386 的 linux-image 中含有 generic 这个 deb 包">
+
+  
+
+  
+    <link rel="icon" href="/favicon.ico">
+  
+
+  <link href="/css/styles.css?v=c114cbe6" rel="stylesheet">
+
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+</head>
+
+<body>
+
+
+  
+    <span id="toolbox-mobile" class="toolbox-mobile">首页</span>
+  
+
+  <div class="post-header CENTER">
+   
+  <div class="toolbox">
+    <a class="toolbox-entry" href="/archives/">
+      <span class="toolbox-entry-text">首页</span>
+      <i class="icon-angle-down"></i>
+      <i class="icon-home"></i>
+    </a>
+    <ul class="list-toolbox">
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/tag/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            标签
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/link/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            友链
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/search/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            搜索
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            主页
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+
+
+</div>
+
+
+
+
+<div class="content content-post CENTER">
+   <article id="post-linux" class="article article-type-post" itemprop="blogPost">
+  <header class="article-header">
+    <h1 class="post-title">Linux 填坑记</h1>
+
+    <div class="article-meta">
+      <span>
+        <i class="icon-calendar"></i>
+        <span>2017.08.02</span>
+      </span>
+
+      
+        <span class="article-author">
+          <i class="icon-user"></i>
+          <span>mvooer</span>
+        </span>
+      
+
+      
+
+
+      
+
+      
+
+      
+      
+    </div>
+  </header>
+
+  <div class="article-content">
+    
+      <h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">nano</div><div class="line">apt-get update  # apt-get upgrade</div><div class="line">apt-get autoclean atuoremove</div></pre></td></tr></table></figure>
+<hr>
+<h2 id="Ubuntu-Debian"><a href="#Ubuntu-Debian" class="headerlink" title="Ubuntu/Debian"></a>Ubuntu/Debian</h2><h3 id="升级内核"><a href="#升级内核" class="headerlink" title="升级内核"></a>升级内核</h3><p>如果系统是 64 位，则下载 amd64 的 linux-image 中含有 generic 这个 deb 包<br>如果系统是 32 位，则下载 i386 的 linux-image 中含有 generic 这个 deb 包<br>安装命令 <code>dpkg -i name.deb</code>, 请自行替换你下载好的deb包文件名<br>安装完成后 执行 <code>/usr/sbin/update-grub</code>, 然后重启vps即可  </p>
+<h3 id="升级-gcc"><a href="#升级-gcc" class="headerlink" title="升级 gcc"></a>升级 gcc</h3><h4 id="add-apt-repository-command-not-found"><a href="#add-apt-repository-command-not-found" class="headerlink" title="add-apt-repository: command not found"></a><code>add-apt-repository: command not found</code></h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">apt-get install python-software-properties</div><div class="line">apt-get install software-properties-common</div></pre></td></tr></table></figure>
+<h4 id="GCC创建文件链接"><a href="#GCC创建文件链接" class="headerlink" title="GCC创建文件链接"></a><code>GCC</code>创建文件链接</h4><ul>
+<li><code>ln -sf</code>which gcc-4.9<code>/usr/bin/gcc</code></li>
+</ul>
+<hr>
+<h2 id="Centos"><a href="#Centos" class="headerlink" title="Centos"></a>Centos</h2><h3 id="Centos-6-更换内核"><a href="#Centos-6-更换内核" class="headerlink" title="Centos 6 更换内核"></a>Centos 6 更换内核</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">wget ftp://ftp.riken.jp/Linux/cern/updates/slc66/i386/RPMS/kernel-firmware-2.6.32-504.el6.noarch.rpm &amp;&amp; rpm -Uvh kernel-firmware-2.6.32-504.el6.noarch.rpm</div><div class="line">rpm -ivh http://soft.91yun.org/ISO/Linux/CentOS/kernel/kernel-firmware-2.6.32-504.3.3.el6.noarch.rpm</div><div class="line">rpm -ivh http://soft.91yun.org/ISO/Linux/CentOS/kernel/kernel-2.6.32-504.3.3.el6.x86_64.rpm --force</div></pre></td></tr></table></figure>
+<p> <code>rpm -qa | grep kernel</code> 如果内核列表有要装的那个版本号就表示OK,然后重启就阔以  <code>uname -r</code><br> <code>wget --no-check-certificate -qO /tmp/appex.sh &quot;https://raw.githubusercontent.com/0oVicero0/serverSpeeder_Install/master/appex.sh&quot; &amp;&amp; bash /tmp/appex.sh &#39;install&#39;</code></p>
+
+    
+  </div>
+</article>
+
+
+   
+
+   
+  <div class="box-prev-next clearfix">
+    <a class="show pull-left" href="/K/08/01/hexo/">
+        <i class="icon icon-angle-left"></i>
+    </a>
+    <a class="show pull-right" href="/K/08/08/mod/">
+        <i class="icon icon-angle-right"></i>
+    </a>
+  </div>
+
+
+
+
+</div>
+
+
+  <a id="backTop" class="back-top">
+    <i class="icon-angle-up"></i>
+  </a>
+
+
+
+
+  <div class="modal" id="modal">
+  <span id="cover" class="cover hide"></span>
+  <div id="modal-dialog" class="modal-dialog hide-dialog">
+    <div class="modal-header">
+      <span id="close" class="btn-close">关闭</span>
+    </div>
+    <hr>
+    <div class="modal-body">
+      <ul class="list-toolbox">
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/tag/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              标签
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/link/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              友链
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/search/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              搜索
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              主页
+            </a>
+          </li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+
+  
+      <div class="fexo-comments comments-post">
+    
+
+    
+
+
+
+
+    
+
+    
+	
+  </div>
+
+  
+
+  <script type="text/javascript">
+  function loadScript(url, callback) {
+    var script = document.createElement('script')
+    script.type = 'text/javascript';
+
+    if (script.readyState) { //IE
+      script.onreadystatechange = function() {
+        if (script.readyState == 'loaded' ||
+          script.readyState == 'complete') {
+          script.onreadystatechange = null;
+          callback();
+        }
+      };
+    } else { //Others
+      script.onload = function() {
+        callback();
+      };
+    }
+
+    script.src = url;
+    document.getElementsByTagName('head')[0].appendChild(script);
+  }
+
+  window.onload = function() {
+    loadScript('/js/bundle.js?235683', function() {
+      // load success
+    });
+  }
+</script>
+
+</body>
+</html>

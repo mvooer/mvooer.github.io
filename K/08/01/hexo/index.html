@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+
+
+  <html class="light page-post">
+
+
+<head>
+  <meta charset="utf-8">
+  
+  <title>Hexo 安装,配置,部署 | I/O - mvooer</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+    <meta name="keywords" content="blog,hexo,pages," />
+  
+
+  <meta name="description" content="环境 (Windows) Git 推荐使用 Git Bash 作为命令行   Node.js 一路 next    配置 npm 墙内推荐 cnpm 或者你用 taobao 都可以 npm config set registry &amp;quot;https://r.cnpmjs.org/&amp;quot; npm config set registry &amp;quot;https://registry.npm.">
+<meta name="keywords" content="blog,hexo,pages">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo 安装,配置,部署">
+<meta property="og:url" content="/K/08/01/hexo/index.html">
+<meta property="og:site_name" content="I&#x2F;O - mvooer">
+<meta property="og:description" content="环境 (Windows) Git 推荐使用 Git Bash 作为命令行   Node.js 一路 next    配置 npm 墙内推荐 cnpm 或者你用 taobao 都可以 npm config set registry &amp;quot;https://r.cnpmjs.org/&amp;quot; npm config set registry &amp;quot;https://registry.npm.">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2017-08-16T08:33:36.409Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo 安装,配置,部署">
+<meta name="twitter:description" content="环境 (Windows) Git 推荐使用 Git Bash 作为命令行   Node.js 一路 next    配置 npm 墙内推荐 cnpm 或者你用 taobao 都可以 npm config set registry &amp;quot;https://r.cnpmjs.org/&amp;quot; npm config set registry &amp;quot;https://registry.npm.">
+
+  
+
+  
+    <link rel="icon" href="/favicon.ico">
+  
+
+  <link href="/css/styles.css?v=c114cbe6" rel="stylesheet">
+
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+</head>
+
+<body>
+
+
+  
+    <span id="toolbox-mobile" class="toolbox-mobile">首页</span>
+  
+
+  <div class="post-header CENTER">
+   
+  <div class="toolbox">
+    <a class="toolbox-entry" href="/archives/">
+      <span class="toolbox-entry-text">首页</span>
+      <i class="icon-angle-down"></i>
+      <i class="icon-home"></i>
+    </a>
+    <ul class="list-toolbox">
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/tag/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            标签
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/link/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            友链
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/search/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            搜索
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            主页
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+
+
+</div>
+
+
+
+
+<div class="content content-post CENTER">
+   <article id="post-hexo" class="article article-type-post" itemprop="blogPost">
+  <header class="article-header">
+    <h1 class="post-title">Hexo 安装,配置,部署</h1>
+
+    <div class="article-meta">
+      <span>
+        <i class="icon-calendar"></i>
+        <span>2017.08.01</span>
+      </span>
+
+      
+        <span class="article-author">
+          <i class="icon-user"></i>
+          <span>mvooer</span>
+        </span>
+      
+
+      
+
+
+      
+
+      
+
+      
+      
+    </div>
+  </header>
+
+  <div class="article-content">
+    
+      <h2 id="环境-Windows"><a href="#环境-Windows" class="headerlink" title="环境 (Windows)"></a>环境 (Windows)</h2><ul>
+<li><a href="https://git-for-windows.github.io/" target="_blank" rel="external">Git</a><ul>
+<li>推荐使用 <code>Git Bash</code> 作为命令行</li>
+</ul>
+</li>
+<li><a href="https://nodejs.org/zh-cn/" target="_blank" rel="external">Node.js</a><ul>
+<li>一路 <code>next</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="配置-npm"><a href="#配置-npm" class="headerlink" title="配置 npm"></a>配置 <code>npm</code></h2><ul>
+<li>墙内推荐 <code>cnpm</code> 或者你用 <code>taobao</code> 都可以<ul>
+<li><code>npm config set registry &quot;https://r.cnpmjs.org/&quot;</code></li>
+<li><code>npm config set registry &quot;https://registry.npm.taobao.org/&quot;</code></li>
+</ul>
+</li>
+<li>如果有点追求?的同学<ul>
+<li><code>npm config set proxy http://server:port</code></li>
+<li><code>npm config set https-proxy http://server:port</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="安装和配置-hexo"><a href="#安装和配置-hexo" class="headerlink" title="安装和配置 hexo"></a>安装和配置 <code>hexo</code></h2><ul>
+<li><code>npm install hexo-cli -g</code> 安装 <code>hexo</code></li>
+<li><code>cd</code> 存放Blog的目录下,直接运行 <code>hexo init</code> ,或者 <code>hexo init &lt;folder&gt;</code></li>
+<li>接下来配置,具体请看<a href="https://hexo.io/zh-cn/docs/configuration.html" target="_blank" rel="external">官方文档</a></li>
+</ul>
+<h2 id="配置-git"><a href="#配置-git" class="headerlink" title="配置 git"></a>配置 <code>git</code></h2><ul>
+<li><code>git config --global user.name &quot;你的名字或昵称&quot;</code></li>
+<li><code>git config --global user.email &quot;你的邮箱&quot;</code></li>
+<li><code>ssh-keygen -t rsa -C &quot;你的邮箱&quot; -f name</code></li>
+<li><code>ssh key</code> 可以多用,如果没有特殊情况,一般同用一个就可以</li>
+<li>如果你想同步多个 <code>pages</code> ,比如 <code>github</code> 和 <code>oschina</code> (码云) 请参考<ul>
+<li><code>http://git.mydoc.io/?t=153707</code></li>
+</ul>
+</li>
+<li>想学习 <code>git</code> 推荐 <code>pro git</code> 或者参考码云或Coding的文档 也可以去看廖雪峰的Git教程</li>
+</ul>
+<h2 id="同步到-pages"><a href="#同步到-pages" class="headerlink" title="同步到 pages"></a>同步到 <code>pages</code></h2><ul>
+<li>主要是部署,参考<code>https://hexo.io/zh-cn/docs/deployment.html</code></li>
+<li>安装 hexo-deployer-git <code>npm install hexo-deployer-git --save</code></li>
+<li>配置 <code>type</code> 和 <code>repo</code> ,注意 <code>yml</code> 的语法</li>
+<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">type: git</div><div class="line">repo: &lt;repository url&gt;</div><div class="line">branch: [branch]</div><div class="line">message: [message]</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="Thanks"><a href="#Thanks" class="headerlink" title="Thanks"></a>Thanks</h2><ul>
+<li>参考<ul>
+<li><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="external">https://hexo.io/zh-cn/docs/</a></li>
+<li><a href="http://git.mydoc.io/" target="_blank" rel="external">http://git.mydoc.io/</a></li>
+</ul>
+</li>
+</ul>
+
+    
+  </div>
+</article>
+
+
+   
+
+   
+  <div class="box-prev-next clearfix">
+    <a class="hide pull-left" href="/">
+        <i class="icon icon-angle-left"></i>
+    </a>
+    <a class="show pull-right" href="/K/08/02/linux/">
+        <i class="icon icon-angle-right"></i>
+    </a>
+  </div>
+
+
+
+
+</div>
+
+
+  <a id="backTop" class="back-top">
+    <i class="icon-angle-up"></i>
+  </a>
+
+
+
+
+  <div class="modal" id="modal">
+  <span id="cover" class="cover hide"></span>
+  <div id="modal-dialog" class="modal-dialog hide-dialog">
+    <div class="modal-header">
+      <span id="close" class="btn-close">关闭</span>
+    </div>
+    <hr>
+    <div class="modal-body">
+      <ul class="list-toolbox">
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/tag/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              标签
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/link/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              友链
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/search/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              搜索
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              主页
+            </a>
+          </li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+
+  
+      <div class="fexo-comments comments-post">
+    
+
+    
+
+
+
+
+    
+
+    
+	
+  </div>
+
+  
+
+  <script type="text/javascript">
+  function loadScript(url, callback) {
+    var script = document.createElement('script')
+    script.type = 'text/javascript';
+
+    if (script.readyState) { //IE
+      script.onreadystatechange = function() {
+        if (script.readyState == 'loaded' ||
+          script.readyState == 'complete') {
+          script.onreadystatechange = null;
+          callback();
+        }
+      };
+    } else { //Others
+      script.onload = function() {
+        callback();
+      };
+    }
+
+    script.src = url;
+    document.getElementsByTagName('head')[0].appendChild(script);
+  }
+
+  window.onload = function() {
+    loadScript('/js/bundle.js?235683', function() {
+      // load success
+    });
+  }
+</script>
+
+</body>
+</html>

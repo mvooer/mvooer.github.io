@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+
+
+  <html class="light page-post">
+
+
+<head>
+  <meta charset="utf-8">
+  
+  <title>魔改 填坑记 | I/O - mvooer</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+    <meta name="keywords" content="linux,bt,centos,debian,bbr," />
+  
+
+  <meta name="description" content="基础环境宝塔BT HTTPShttp301跳转https12345server &amp;#123;listen 80;server_name name.com;return 301 https://name.com$request_uri;&amp;#125; 伪静态123 location / &amp;#123;    try_files $uri $uri/ /index.php$is_args$args;&amp;#1">
+<meta name="keywords" content="linux,bt,centos,debian,bbr">
+<meta property="og:type" content="article">
+<meta property="og:title" content="魔改 填坑记">
+<meta property="og:url" content="/K/08/08/mod/index.html">
+<meta property="og:site_name" content="I&#x2F;O - mvooer">
+<meta property="og:description" content="基础环境宝塔BT HTTPShttp301跳转https12345server &amp;#123;listen 80;server_name name.com;return 301 https://name.com$request_uri;&amp;#125; 伪静态123 location / &amp;#123;    try_files $uri $uri/ /index.php$is_args$args;&amp;#1">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2017-08-16T09:08:33.674Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="魔改 填坑记">
+<meta name="twitter:description" content="基础环境宝塔BT HTTPShttp301跳转https12345server &amp;#123;listen 80;server_name name.com;return 301 https://name.com$request_uri;&amp;#125; 伪静态123 location / &amp;#123;    try_files $uri $uri/ /index.php$is_args$args;&amp;#1">
+
+  
+
+  
+    <link rel="icon" href="/favicon.ico">
+  
+
+  <link href="/css/styles.css?v=c114cbe6" rel="stylesheet">
+
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+</head>
+
+<body>
+
+
+  
+    <span id="toolbox-mobile" class="toolbox-mobile">首页</span>
+  
+
+  <div class="post-header CENTER">
+   
+  <div class="toolbox">
+    <a class="toolbox-entry" href="/archives/">
+      <span class="toolbox-entry-text">首页</span>
+      <i class="icon-angle-down"></i>
+      <i class="icon-home"></i>
+    </a>
+    <ul class="list-toolbox">
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/tag/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            标签
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/link/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            友链
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/search/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            搜索
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            主页
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+
+
+</div>
+
+
+
+
+<div class="content content-post CENTER">
+   <article id="post-mod" class="article article-type-post" itemprop="blogPost">
+  <header class="article-header">
+    <h1 class="post-title">魔改 填坑记</h1>
+
+    <div class="article-meta">
+      <span>
+        <i class="icon-calendar"></i>
+        <span>2017.08.08</span>
+      </span>
+
+      
+        <span class="article-author">
+          <i class="icon-user"></i>
+          <span>mvooer</span>
+        </span>
+      
+
+      
+
+
+      
+
+      
+
+      
+      
+    </div>
+  </header>
+
+  <div class="article-content">
+    
+      <h2 id="基础环境"><a href="#基础环境" class="headerlink" title="基础环境"></a>基础环境</h2><h3 id="宝塔"><a href="#宝塔" class="headerlink" title="宝塔"></a>宝塔</h3><p><a href="https://bt.cn" target="_blank" rel="external">BT</a></p>
+<h3 id="HTTPS"><a href="#HTTPS" class="headerlink" title="HTTPS"></a>HTTPS</h3><p><code>http</code>301跳转<code>https</code><br><figure class="highlight nginx"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="section">server</span> &#123;</div><div class="line"><span class="attribute">listen</span> <span class="number">80</span>;</div><div class="line"><span class="attribute">server_name</span> name.com;</div><div class="line"><span class="attribute">return</span> <span class="number">301</span> https://name.com<span class="variable">$request_uri</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h3 id="伪静态"><a href="#伪静态" class="headerlink" title="伪静态"></a>伪静态</h3><figure class="highlight nginx"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"> <span class="attribute">location</span> / &#123;</div><div class="line">    <span class="attribute">try_files</span> <span class="variable">$uri</span> <span class="variable">$uri</span>/ /index.php<span class="variable">$is_args</span><span class="variable">$args</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>然后重启<code>nginx</code></p>
+<h3 id="常用"><a href="#常用" class="headerlink" title="常用"></a>常用</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">service bt restart # stop start </div><div class="line">cat /www/server/panel/data/port.pl # 查看面板端口</div><div class="line">cat /www/server/panel/default.pl #查看默认密码</div><div class="line">rm -f /www/server/panel/data/*.login #清除登录限制</div><div class="line">/www/server/php/56/etc/php.ini # php.ini 位置</div></pre></td></tr></table></figure>
+<hr>
+<h2 id="前端"><a href="#前端" class="headerlink" title="前端"></a>前端</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">git clone https://github.com/esdeathlove/ss-panel-v3-mod.git tmp -b new_master &amp;&amp; mv tmp/.git . &amp;&amp; rm -rf tmp &amp;&amp; git reset --hard</div><div class="line">php composer.phar install</div><div class="line">chown -R root:root *</div><div class="line">chmod -R 777 *</div><div class="line">chown -R www:www storage</div><div class="line">chattr -i .user.ini</div><div class="line">mv .user.ini public</div><div class="line">cd public</div><div class="line">chattr +i .user.ini</div></pre></td></tr></table></figure>
+<p>配置,重点是 数据库, 邮件, 邮箱验证码<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cp config/.config.php.example config/.config.php</div><div class="line">nano config/.config.php</div></pre></td></tr></table></figure></p>
+<p>下载网站目录SQL文件夹里的<code>glzjin_all.sql</code>然后导入数据库  </p>
+<p>添加管理员账户,定时任务<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">php -n xcat createAdmin #php xcat resetTraffic</div><div class="line">php xcat syncusers</div><div class="line">crontab -e  </div><div class="line"><span class="meta">#</span><span class="bash"> 按键盘 Insert 添加</span></div><div class="line"><span class="meta">#</span><span class="bash"><span class="comment"># 30 22 * * * php /www/wwwroot/wish.n7then.com/xcat sendDiaryMail</span></span></div><div class="line">*/1 * * * * php /www/wwwroot/wish.n7then.com/xcat synclogin</div><div class="line"><span class="meta">#</span><span class="bash"><span class="comment"># */1 * * * * php /www/wwwroot/wish.n7then.com/xcat syncvpn</span></span></div><div class="line">0 0 * * * php -n /www/wwwroot/wish.n7then.com/xcat dailyjob</div><div class="line">*/1 * * * * php /www/wwwroot/wish.n7then.com/xcat checkjob</div><div class="line">*/1 * * * * php -n /www/wwwroot/wish.n7then.com/xcat syncnas</div><div class="line"><span class="meta">#</span><span class="bash"> 最后按键盘 Insert Esc :wq 退出并保存</span></div></pre></td></tr></table></figure></p>
+<hr>
+<h2 id="后端"><a href="#后端" class="headerlink" title="后端"></a>后端</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">yum -y groupinstall "Development Tools" &amp;&amp; yum -y install wget &amp;&amp; wget https://github.com/jedisct1/libsodium/releases/download/1.0.13/libsodium-1.0.13.tar.gz &amp;&amp; tar xf libsodium-1.0.13.tar.gz &amp;&amp; cd libsodium-1.0.13 &amp;&amp; ./configure &amp;&amp; make -j2 &amp;&amp; make install &amp;&amp; echo /usr/local/lib &gt; /etc/ld.so.conf.d/usr_local_lib.conf &amp;&amp; ldconfig &amp;&amp; rm -rf /root/libsodium-1.0.11.tar.gz &amp;&amp; cd /root</div><div class="line">git clone -b manyuser https://github.com/esdeathlove/shadowsocks.git</div><div class="line">cd shadowsocks</div><div class="line">yum -y install python-devel &amp;&amp; yum -y install libffi-devel &amp;&amp; yum -y install openssl-devel</div><div class="line">pip install -r requirements.txt # Debian pip install cymysql</div><div class="line">cp apiconfig.py userapiconfig.py</div><div class="line">cp config.json user-config.json</div><div class="line">service iptables stop</div><div class="line">chkconfig iptables off # 重启后永久关闭 iptabls 不要卸载.. #   rpm -e epel-release-6-8.noarch</div></pre></td></tr></table></figure>
+<hr>
+<h2 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h2><h3 id="TFO"><a href="#TFO" class="headerlink" title="TFO"></a>TFO</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">服务端要启用 TFO:</div><div class="line">1. 确认服务器内核 &gt; 3.7</div><div class="line">2. 确认内核选项 net.ipv4.tcp_fastopen 为 3.</div><div class="line">3. user-config.json 里 fast_open 需要为 true.</div></pre></td></tr></table></figure>
+<hr>
+<h2 id="感谢-参考"><a href="#感谢-参考" class="headerlink" title="感谢 (参考)"></a>感谢 (参考)</h2><ul>
+<li><a href="https://lala.im/88.html" target="_blank" rel="external">https://lala.im/88.html</a></li>
+<li><a href="https://91vps.club/2017/06/08/ss-panel-1/" target="_blank" rel="external">https://91vps.club/2017/06/08/ss-panel-1/</a></li>
+<li><a href="http://xu62011.cn/archives/430" target="_blank" rel="external">http://xu62011.cn/archives/430</a></li>
+<li><a href="https://moeclub.org/2017/03/08/14/" target="_blank" rel="external">https://moeclub.org/2017/03/08/14/</a></li>
+<li><a href="https://www.91yun.co/archives/795" target="_blank" rel="external">https://www.91yun.co/archives/795</a></li>
+</ul>
+<hr>
+<h2 id="拜谢"><a href="#拜谢" class="headerlink" title="拜谢"></a>拜谢</h2><ul>
+<li>orvice</li>
+<li>esdeathlove</li>
+<li>glzjin</li>
+</ul>
+<hr>
+<h2 id="怀念"><a href="#怀念" class="headerlink" title="怀念"></a>怀念</h2><ul>
+<li>breakwa11</li>
+<li>clowwindy</li>
+</ul>
+
+    
+  </div>
+</article>
+
+
+   
+
+   
+  <div class="box-prev-next clearfix">
+    <a class="show pull-left" href="/K/08/02/linux/">
+        <i class="icon icon-angle-left"></i>
+    </a>
+    <a class="show pull-right" href="/K/08/10/fe-cdn/">
+        <i class="icon icon-angle-right"></i>
+    </a>
+  </div>
+
+
+
+
+</div>
+
+
+  <a id="backTop" class="back-top">
+    <i class="icon-angle-up"></i>
+  </a>
+
+
+
+
+  <div class="modal" id="modal">
+  <span id="cover" class="cover hide"></span>
+  <div id="modal-dialog" class="modal-dialog hide-dialog">
+    <div class="modal-header">
+      <span id="close" class="btn-close">关闭</span>
+    </div>
+    <hr>
+    <div class="modal-body">
+      <ul class="list-toolbox">
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/tag/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              标签
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/link/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              友链
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/search/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              搜索
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              主页
+            </a>
+          </li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+
+  
+      <div class="fexo-comments comments-post">
+    
+
+    
+
+
+
+
+    
+
+    
+	
+  </div>
+
+  
+
+  <script type="text/javascript">
+  function loadScript(url, callback) {
+    var script = document.createElement('script')
+    script.type = 'text/javascript';
+
+    if (script.readyState) { //IE
+      script.onreadystatechange = function() {
+        if (script.readyState == 'loaded' ||
+          script.readyState == 'complete') {
+          script.onreadystatechange = null;
+          callback();
+        }
+      };
+    } else { //Others
+      script.onload = function() {
+        callback();
+      };
+    }
+
+    script.src = url;
+    document.getElementsByTagName('head')[0].appendChild(script);
+  }
+
+  window.onload = function() {
+    loadScript('/js/bundle.js?235683', function() {
+      // load success
+    });
+  }
+</script>
+
+</body>
+</html>
