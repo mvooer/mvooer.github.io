@@ -12,21 +12,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   
-    <meta name="keywords" content="cli,note," />
+    <meta name="keywords" content="cli,note,basic," />
   
 
-  <meta name="description" content="CLI WTF?CLI 是 command-line interface的缩写,中文叫做 命令行界面. Why use CLI?有些任务在命令行下去执行会更有效率。而且在特定的环境下，有些任务也只能在命令行下面去做。比如你要维护一台服务器，服务器并没有图形操作界面，所有对服务器的修改，配置，维护，都要通过命令行界面去完成。 Let’s go工作目录工具目录指的就是你在命令行界面下的时候，当前所在的">
-<meta name="keywords" content="cli,note">
+  <meta name="description" content="CLI WTF?CLI 是 command-line interface的缩写,中文叫做 命令行界面. Why use CLI?有些任务在命令行下去执行会更有效率.而且在特定的环境下,有些任务也只能在命令行下面去做.比如你要维护一台服务器,服务器并没有图形操作界面,所有对服务器的修改,配置,维护,都要通过命令行界面去完成. 命令行界面工作目录工具目录指的就是你在命令行界面下的时候,当前所在的位置.">
+<meta name="keywords" content="cli,note,basic">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CLI">
 <meta property="og:url" content="/K/08/22/cli/index.html">
 <meta property="og:site_name" content="I&#x2F;O - mvooer">
-<meta property="og:description" content="CLI WTF?CLI 是 command-line interface的缩写,中文叫做 命令行界面. Why use CLI?有些任务在命令行下去执行会更有效率。而且在特定的环境下，有些任务也只能在命令行下面去做。比如你要维护一台服务器，服务器并没有图形操作界面，所有对服务器的修改，配置，维护，都要通过命令行界面去完成。 Let’s go工作目录工具目录指的就是你在命令行界面下的时候，当前所在的">
+<meta property="og:description" content="CLI WTF?CLI 是 command-line interface的缩写,中文叫做 命令行界面. Why use CLI?有些任务在命令行下去执行会更有效率.而且在特定的环境下,有些任务也只能在命令行下面去做.比如你要维护一台服务器,服务器并没有图形操作界面,所有对服务器的修改,配置,维护,都要通过命令行界面去完成. 命令行界面工作目录工具目录指的就是你在命令行界面下的时候,当前所在的位置.">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-08-22T05:04:49.779Z">
+<meta property="og:updated_time" content="2017-08-22T14:13:17.705Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CLI">
-<meta name="twitter:description" content="CLI WTF?CLI 是 command-line interface的缩写,中文叫做 命令行界面. Why use CLI?有些任务在命令行下去执行会更有效率。而且在特定的环境下，有些任务也只能在命令行下面去做。比如你要维护一台服务器，服务器并没有图形操作界面，所有对服务器的修改，配置，维护，都要通过命令行界面去完成。 Let’s go工作目录工具目录指的就是你在命令行界面下的时候，当前所在的">
+<meta name="twitter:description" content="CLI WTF?CLI 是 command-line interface的缩写,中文叫做 命令行界面. Why use CLI?有些任务在命令行下去执行会更有效率.而且在特定的环境下,有些任务也只能在命令行下面去做.比如你要维护一台服务器,服务器并没有图形操作界面,所有对服务器的修改,配置,维护,都要通过命令行界面去完成. 命令行界面工作目录工具目录指的就是你在命令行界面下的时候,当前所在的位置.">
 
   
 
@@ -154,23 +154,38 @@
   <div class="article-content">
     
       <h2 id="CLI-WTF"><a href="#CLI-WTF" class="headerlink" title="CLI WTF?"></a>CLI WTF?</h2><p><code>CLI</code> 是 <code>command-line interface</code>的缩写,中文叫做 <code>命令行界面</code>.</p>
-<h3 id="Why-use-CLI"><a href="#Why-use-CLI" class="headerlink" title="Why use CLI?"></a>Why use CLI?</h3><p>有些任务在命令行下去执行会更有效率。而且在特定的环境下，有些任务也只能在命令行下面去做。比如你要维护一台服务器，服务器并没有图形操作界面，所有对服务器的修改，配置，维护，都要通过命令行界面去完成。</p>
-<h2 id="Let’s-go"><a href="#Let’s-go" class="headerlink" title="Let’s go"></a>Let’s go</h2><h3 id="工作目录"><a href="#工作目录" class="headerlink" title="工作目录"></a>工作目录</h3><p>工具目录指的就是你在命令行界面下的时候，当前所在的位置。打开命令行界面以后，一般默认你会在登录的用户的主目录下面。</p>
-<h4 id="输出工作目录"><a href="#输出工作目录" class="headerlink" title="输出工作目录"></a>输出工作目录</h4><p><code>pwd</code> （ <code>print working directory</code>）。它可以输出你当前自己所在的位置（工作目录）.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pwd</div></pre></td></tr></table></figure></p>
+<h3 id="Why-use-CLI"><a href="#Why-use-CLI" class="headerlink" title="Why use CLI?"></a>Why use CLI?</h3><p>有些任务在命令行下去执行会更有效率.而且在特定的环境下,有些任务也只能在命令行下面去做.比如你要维护一台服务器,服务器并没有图形操作界面,所有对服务器的修改,配置,维护,都要通过命令行界面去完成.</p>
+<h2 id="命令行界面"><a href="#命令行界面" class="headerlink" title="命令行界面"></a>命令行界面</h2><h3 id="工作目录"><a href="#工作目录" class="headerlink" title="工作目录"></a>工作目录</h3><p>工具目录指的就是你在命令行界面下的时候,当前所在的位置.打开命令行界面以后,一般默认你会在登录的用户的主目录下面.</p>
+<h4 id="输出工作目录"><a href="#输出工作目录" class="headerlink" title="输出工作目录"></a>输出工作目录</h4><p><code>pwd</code> ( <code>print working directory</code>).它可以输出你当前自己所在的位置(工作目录).<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pwd</div></pre></td></tr></table></figure></p>
 <p>返回的是工作目录的位置:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">/d/K</div></pre></td></tr></table></figure></p>
-<p><code>/d/K</code>最开始的 <code>/</code> 表示的是根（root），<code>macOS</code> 与 <code>Linux</code> 操作系统，目录位置最前面如果是 <code>/</code>，那它表示的就是系统的根目录。</p>
-<h4 id="改变工作目录"><a href="#改变工作目录" class="headerlink" title="改变工作目录"></a>改变工作目录</h4><p><code>cd</code>（<code>change directory</code>）命令可以改变当前所在的工作目录。执行:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cd io</div></pre></td></tr></table></figure></p>
-<p>意思就是把工作目录改成当前目录下的 <code>io</code> 这个目录，<code>cd</code> 后面加上目录的位置，上面用的是一个相对位置，也就是 <code>io</code> 这个目录应该是在当前所在的位置的下面。  </p>
-<h3 id="路径"><a href="#路径" class="headerlink" title="路径"></a>路径</h3><p>进入到某个目录的下面，去编辑在某个位置上的文件。你应该了解文件与目录的路径在命令行界面下的表示方法。</p>
-<h4 id="层级"><a href="#层级" class="headerlink" title="层级"></a>层级</h4><p>目录的层级关系一般使用 <code>/</code> 来表示，Windows 上用的是 <code>\</code> 。<br><code>macOS</code> / <code>Linux</code><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">/d/k/io</div></pre></td></tr></table></figure></p>
+<p><code>/d/K</code>最开始的 <code>/</code> 表示的是根(root),<code>macOS</code> 与 <code>Linux</code> 操作系统,目录位置最前面如果是 <code>/</code>,那它表示的就是系统的根目录.</p>
+<h4 id="改变工作目录"><a href="#改变工作目录" class="headerlink" title="改变工作目录"></a>改变工作目录</h4><p><code>cd</code>(<code>change directory</code>)命令可以改变当前所在的工作目录.执行:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cd io</div></pre></td></tr></table></figure></p>
+<p>意思就是把工作目录改成当前目录下的 <code>io</code> 这个目录,<code>cd</code> 后面加上目录的位置,上面用的是一个相对位置,也就是 <code>io</code> 这个目录应该是在当前所在的位置的下面.  </p>
+<h3 id="路径"><a href="#路径" class="headerlink" title="路径"></a>路径</h3><p>进入到某个目录的下面,去编辑在某个位置上的文件.你应该了解文件与目录的路径在命令行界面下的表示方法.</p>
+<h4 id="层级"><a href="#层级" class="headerlink" title="层级"></a>层级</h4><p>目录的层级关系一般使用 <code>/</code> 来表示,Windows 上用的是 <code>\</code> .<br><code>macOS</code> / <code>Linux</code><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">/d/k/io</div></pre></td></tr></table></figure></p>
 <p><code>Windows</code><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">D:\K\io</div></pre></td></tr></table></figure></p>
-<h4 id="相对"><a href="#相对" class="headerlink" title="相对"></a>相对</h4><p>文件与目录的位置可以表示相对的形式表示。如果路径里面不包含系统的根（root），那这个路径就属于相对路径 。这个根在 macOS / Linux 上指的是路径最前面的 <code>/</code> ，Windows 上指的是路径最前面的盘符，比如 <code>C:\</code> 或 <code>D:\</code> 。</p>
-<h4 id="绝对"><a href="#绝对" class="headerlink" title="绝对"></a>绝对</h4><p>绝对路径的最前面要包含系统的根。不管你在哪里，都可以使用绝对路径定位到目录或文件。而相对路径要看你当前所在的位置是哪里才能判断路径真正表示的位置是哪里。</p>
-<p>比如你执行改变工作目录的命令，像这样:<br><code>cd io</code><br>如果你当前是在 <code>/d/K/</code> 目录的下面，那 <code>cd io</code> 以后，所在的位置就是 <code>/d/K/io</code>。<br>如果你当前是在 <code>/d/SoftWare</code> 这个目录的下面，那执行命令以后，你的位置是在 <code>/d/SoftWare/io</code> 这里。<br>但是如果你这样做:<br><code>cd /d/K/io</code><br>这样不管你之前是在哪里，执行上面这行命令以后，你所在的位置就是 <code>/d/K/io</code>，因为这里你用了一个绝对路径。</p>
-<h3 id="特殊符号"><a href="#特殊符号" class="headerlink" title="特殊符号"></a>特殊符号</h3><p>在路径里有些特殊符号会表示一些特殊的意义。</p>
-<p><code>~</code> （波浪号），表示的是用户主目录，它是一个相对的位置。这里说的用户指的是你当前登录的用户，比如我用 <code>mvooer</code> 用户登录到系统，在 <code>macOS</code> 系统上这个 ~ 表示的路径应该就是 <code>/Users/mvooer</code> 。在 <code>Linux</code> 系统上，这个路径应该是 <code>/home/mvooer</code>。在 <code>Windows</code> 上，这个路径会是 <code>C:\Users\mvooer</code> 。</p>
-<p><code>.</code> （一个点），表示当前目录。比如 <code>./io/source</code> ，表示当前目录下面的 <code>io</code> 里的 <code>source</code> 所在的位置。</p>
-<p><code>..</code> （两个点），表示上一级目录。比如 <code>./io/source</code>，表示当前目录的上一级目录里面的 <code>io</code> 下面的 <code>source</code> 所在的位置。</p>
+<h4 id="相对"><a href="#相对" class="headerlink" title="相对"></a>相对</h4><p>文件与目录的位置可以表示相对的形式表示.如果路径里面不包含系统的根(root),那这个路径就属于相对路径 .这个根在 macOS / Linux 上指的是路径最前面的 <code>/</code> ,Windows 上指的是路径最前面的盘符,比如 <code>C:\</code> 或 <code>D:\</code> .</p>
+<h4 id="绝对"><a href="#绝对" class="headerlink" title="绝对"></a>绝对</h4><p>绝对路径的最前面要包含系统的根.不管你在哪里,都可以使用绝对路径定位到目录或文件.而相对路径要看你当前所在的位置是哪里才能判断路径真正表示的位置是哪里.</p>
+<p>比如你执行改变工作目录的命令,像这样:<br><code>cd io</code><br>如果你当前是在 <code>/d/K/</code> 目录的下面,那 <code>cd io</code> 以后,所在的位置就是 <code>/d/K/io</code>.<br>如果你当前是在 <code>/d/SoftWare</code> 这个目录的下面,那执行命令以后,你的位置是在 <code>/d/SoftWare/io</code> 这里.<br>但是如果你这样做:<br><code>cd /d/K/io</code><br>这样不管你之前是在哪里,执行上面这行命令以后,你所在的位置就是 <code>/d/K/io</code>,因为这里你用了一个绝对路径.</p>
+<h3 id="特殊符号"><a href="#特殊符号" class="headerlink" title="特殊符号"></a>特殊符号</h3><p>在路径里有些特殊符号会表示一些特殊的意义.</p>
+<p><code>~</code> (波浪号),表示的是用户主目录,它是一个相对的位置.这里说的用户指的是你当前登录的用户,比如我用 <code>mvooer</code> 用户登录到系统,在 <code>macOS</code> 系统上这个 ~ 表示的路径应该就是 <code>/Users/mvooer</code> .在 <code>Linux</code> 系统上,这个路径应该是 <code>/home/mvooer</code>.在 <code>Windows</code> 上,这个路径会是 <code>C:\Users\mvooer</code> .</p>
+<p><code>.</code> (一个点),表示当前目录.比如 <code>./io/source</code> ,表示当前目录下面的 <code>io</code> 里的 <code>source</code> 所在的位置.</p>
+<p><code>..</code> (两个点),表示上一级目录.比如 <code>./io/source</code>,表示当前目录的上一级目录里面的 <code>io</code> 下面的 <code>source</code> 所在的位置.</p>
+<h2 id="文件与目录"><a href="#文件与目录" class="headerlink" title="文件与目录"></a>文件与目录</h2><h3 id="列出"><a href="#列出" class="headerlink" title="列出"></a>列出</h3><p><code>ls</code>(list)可以列出目录里的内容.<br>直接使用 <code>ls</code> 返回当前目录里的文件/文件夹.<br><code>ls ~</code>后跟相对或绝对路径,返回指定目录里的文件/文件夹.</p>
+<h4 id="所有"><a href="#所有" class="headerlink" title="所有"></a>所有</h4><p>在 <code>macOS</code> / <code>Linux</code> 系统上,用<code>.</code>点开头的文件与目录会被隐藏起来,如果你想列出目录里包含的所有内容,包括这些用<code>.</code>点开头的文件或目录,要加上一个 <code>a</code> 参数,像这样:<br><code>ls -a</code></p>
+<h4 id="长格式"><a href="#长格式" class="headerlink" title="长格式"></a>长格式</h4><p><code>ls</code> 命令后面加上 <code>l</code> 参数,可以使用长格式表示内容 , 返回的列表里面包含更详细的信息,比如文件或目录的权限,拥有者,用户组等等.</p>
+<h4 id="组合"><a href="#组合" class="headerlink" title="组合"></a>组合</h4><p>命令的参数也可以组合使用：<code>ls -la</code> , 用了一个 <code>l</code> 参数,还有一个 <code>a</code> 参数.</p>
+<h4 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h4><p><code>ls -lt ~</code> 列出的内容,按内容的修改时间排列,最近修改的排在最前面.</p>
+<h3 id="创建"><a href="#创建" class="headerlink" title="创建"></a>创建</h3><p><code>mkdir</code> 可以创建新的目录,<code>touch</code> 可以创建空白的文件.</p>
+<h4 id="mkdir"><a href="#mkdir" class="headerlink" title="mkdir"></a><code>mkdir</code></h4><p><code>mkdir</code>(make directory),可以创建新的目录.<code>mkdir [filename]</code> .</p>
+<h4 id="touch"><a href="#touch" class="headerlink" title="touch"></a><code>touch</code></h4><p>创建一个空白的文件可以使用 <code>touch</code> 命令.<code>touch [filename]</code> .</p>
+<h3 id="重命名与移动"><a href="#重命名与移动" class="headerlink" title="重命名与移动"></a>重命名与移动</h3><h4 id="mv-move-命令可以移动或重命名目录与文件"><a href="#mv-move-命令可以移动或重命名目录与文件" class="headerlink" title="mv(move)命令可以移动或重命名目录与文件."></a><code>mv</code>(move)命令可以移动或重命名目录与文件.</h4><p><code>mv [对象] [目标]</code><br>移动文件 <code>mv ReadME.md io/ReadME.md</code><br>移动目录 <code>mv io thefuckfile</code></p>
+<h3 id="编辑文件"><a href="#编辑文件" class="headerlink" title="编辑文件"></a>编辑文件</h3><p>一般<code>linux</code> 自带 <code>vi</code> 编辑器 ,因为不熟悉<code>vi</code>的移动方式,所以我一般用<code>nano</code>.<br><code>nano [file or filename]</code>.<br>也可以直接创建文件.  </p>
+<h3 id="复制"><a href="#复制" class="headerlink" title="复制"></a>复制</h3><p><code>cp</code>(copy),可以复制指定的文件与目录.<br><code>cp [对象] [目标]</code>.<br><code>cp ReamME.md io/ReadME.md</code></p>
+<h3 id="查看文件"><a href="#查看文件" class="headerlink" title="查看文件"></a>查看文件</h3><p>查看文件里面的内容,你可以用编辑器打开这个文件,如果你只想输出文件里的内容,可以使用 <code>cat</code> 命令.如果文件比较大,你只想输出文件的最后一小部分,可以使用 <code>tail</code> 命令.</p>
+<h4 id="cat"><a href="#cat" class="headerlink" title="cat"></a><code>cat</code></h4><p><code>cat</code>,可以直接输出文件里的内容.<code>cat [filename]</code></p>
+<h4 id="tail"><a href="#tail" class="headerlink" title="tail"></a><code>tail</code></h4><p><code>tail</code>,可以输出文件里的最后一小部分内容.</p>
+<h3 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h3><p><code>rm</code>(remove),可以删除目录或文件.<br>要删除一个目录里包含的所有内容,要加上 <code>r</code> 选项,想不出现确认提示,还要再加一个 <code>f</code> 选项.<br><code>rm [file or filename]</code></p>
 
     
   </div>
