@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+
+  <html class="light page-post">
+
+
+<head>
+  <meta charset="utf-8">
+  
+  <title>CLI | I/O - mvooer</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+    <meta name="keywords" content="cli,note," />
+  
+
+  <meta name="description" content="CLI WTF?CLI 是 command-line interface的缩写,中文叫做 命令行界面. Why use CLI?有些任务在命令行下去执行会更有效率。而且在特定的环境下，有些任务也只能在命令行下面去做。比如你要维护一台服务器，服务器并没有图形操作界面，所有对服务器的修改，配置，维护，都要通过命令行界面去完成。 Let’s go工作目录工具目录指的就是你在命令行界面下的时候，当前所在的">
+<meta name="keywords" content="cli,note">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CLI">
+<meta property="og:url" content="/K/08/22/cli/index.html">
+<meta property="og:site_name" content="I&#x2F;O - mvooer">
+<meta property="og:description" content="CLI WTF?CLI 是 command-line interface的缩写,中文叫做 命令行界面. Why use CLI?有些任务在命令行下去执行会更有效率。而且在特定的环境下，有些任务也只能在命令行下面去做。比如你要维护一台服务器，服务器并没有图形操作界面，所有对服务器的修改，配置，维护，都要通过命令行界面去完成。 Let’s go工作目录工具目录指的就是你在命令行界面下的时候，当前所在的">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2017-08-22T04:15:02.923Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="CLI">
+<meta name="twitter:description" content="CLI WTF?CLI 是 command-line interface的缩写,中文叫做 命令行界面. Why use CLI?有些任务在命令行下去执行会更有效率。而且在特定的环境下，有些任务也只能在命令行下面去做。比如你要维护一台服务器，服务器并没有图形操作界面，所有对服务器的修改，配置，维护，都要通过命令行界面去完成。 Let’s go工作目录工具目录指的就是你在命令行界面下的时候，当前所在的">
+
+  
+
+  
+    <link rel="icon" href="/favicon.ico">
+  
+
+  <link href="/css/styles.css?v=c114cbe6" rel="stylesheet">
+
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+</head>
+
+<body>
+
+
+  
+    <span id="toolbox-mobile" class="toolbox-mobile">首页</span>
+  
+
+  <div class="post-header CENTER">
+   
+  <div class="toolbox">
+    <a class="toolbox-entry" href="/archives/">
+      <span class="toolbox-entry-text">首页</span>
+      <i class="icon-angle-down"></i>
+      <i class="icon-home"></i>
+    </a>
+    <ul class="list-toolbox">
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/tag/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            标签
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/link/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            友链
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/search/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            搜索
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            主页
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+
+
+</div>
+
+
+
+
+<div class="content content-post CENTER">
+   <article id="post-cli" class="article article-type-post" itemprop="blogPost">
+  <header class="article-header">
+    <h1 class="post-title">CLI</h1>
+
+    <div class="article-meta">
+      <span>
+        <i class="icon-calendar"></i>
+        <span>2017.08.22</span>
+      </span>
+
+      
+        <span class="article-author">
+          <i class="icon-user"></i>
+          <span>mvooer</span>
+        </span>
+      
+
+      
+
+
+      
+
+      
+
+      
+      
+    </div>
+  </header>
+
+  <div class="article-content">
+    
+      <h2 id="CLI-WTF"><a href="#CLI-WTF" class="headerlink" title="CLI WTF?"></a>CLI WTF?</h2><p><code>CLI</code> 是 <code>command-line interface</code>的缩写,中文叫做 <code>命令行界面</code>.</p>
+<h3 id="Why-use-CLI"><a href="#Why-use-CLI" class="headerlink" title="Why use CLI?"></a>Why use CLI?</h3><p>有些任务在命令行下去执行会更有效率。而且在特定的环境下，有些任务也只能在命令行下面去做。比如你要维护一台服务器，服务器并没有图形操作界面，所有对服务器的修改，配置，维护，都要通过命令行界面去完成。</p>
+<h2 id="Let’s-go"><a href="#Let’s-go" class="headerlink" title="Let’s go"></a>Let’s go</h2><h3 id="工作目录"><a href="#工作目录" class="headerlink" title="工作目录"></a>工作目录</h3><p>工具目录指的就是你在命令行界面下的时候，当前所在的位置。打开命令行界面以后，一般默认你会在登录的用户的主目录下面。</p>
+<h4 id="输出工作目录"><a href="#输出工作目录" class="headerlink" title="输出工作目录"></a>输出工作目录</h4><p><code>pwd</code> （ <code>print working directory</code>）。它可以输出你当前自己所在的位置（工作目录）.<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">pwd</span></div></pre></td></tr></table></figure></p>
+<p>返回的是工作目录的位置:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">/d/K</div></pre></td></tr></table></figure></p>
+<p><code>/d/K</code>最开始的 <code>/</code> 表示的是根（root），<code>macOS</code> 与 <code>Linux</code> 操作系统，目录位置最前面如果是 <code>/</code>，那它表示的就是系统的根目录。</p>
+<h4 id="改变工作目录"><a href="#改变工作目录" class="headerlink" title="改变工作目录"></a>改变工作目录</h4><p><code>cd</code>（<code>change directory</code>）命令可以改变当前所在的工作目录。执行:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> io</div></pre></td></tr></table></figure></p>
+<p>意思就是把工作目录改成当前目录下的 <code>io</code> 这个目录，<code>cd</code> 后面加上目录的位置，上面用的是一个相对位置，也就是 <code>io</code> 这个目录应该是在当前所在的位置的下面。  </p>
+<h3 id="路径"><a href="#路径" class="headerlink" title="路径"></a>路径</h3><p>进入到某个目录的下面，去编辑在某个位置上的文件。你应该了解文件与目录的路径在命令行界面下的表示方法。</p>
+<h4 id="层级"><a href="#层级" class="headerlink" title="层级"></a>层级</h4><p>目录的层级关系一般使用 <code>/</code> 来表示，Windows 上用的是 <code>\</code> 。<br><code>macOS</code> / <code>Linux</code><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">/d/k/io</div></pre></td></tr></table></figure></p>
+<p><code>Windows</code><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">D:\K\io</div></pre></td></tr></table></figure></p>
+<h4 id="相对"><a href="#相对" class="headerlink" title="相对"></a>相对</h4><p>文件与目录的位置可以表示相对的形式表示。如果路径里面不包含系统的根（root），那这个路径就属于相对路径 。这个根在 macOS / Linux 上指的是路径最前面的 <code>/</code> ，Windows 上指的是路径最前面的盘符，比如 <code>C:\</code> 或 <code>D:\</code> 。</p>
+<h4 id="绝对"><a href="#绝对" class="headerlink" title="绝对"></a>绝对</h4><p>绝对路径的最前面要包含系统的根。不管你在哪里，都可以使用绝对路径定位到目录或文件。而相对路径要看你当前所在的位置是哪里才能判断路径真正表示的位置是哪里。</p>
+<p>比如你执行改变工作目录的命令，像这样:<br><code>cd io</code><br>如果你当前是在 <code>/d/K/</code> 目录的下面，那 <code>cd io</code> 以后，所在的位置就是 <code>/d/K/io</code>。<br>如果你当前是在 <code>/d/SoftWare</code> 这个目录的下面，那执行命令以后，你的位置是在 <code>/d/SoftWare/io</code> 这里。<br>但是如果你这样做:<br><code>cd /d/K/io</code><br>这样不管你之前是在哪里，执行上面这行命令以后，你所在的位置就是 <code>/d/K/io</code>，因为这里你用了一个绝对路径。</p>
+<h3 id="特殊符号"><a href="#特殊符号" class="headerlink" title="特殊符号"></a>特殊符号</h3><p>在路径里有些特殊符号会表示一些特殊的意义。</p>
+<p><code>~</code> （波浪号），表示的是用户主目录，它是一个相对的位置。这里说的用户指的是你当前登录的用户，比如我用 <code>mvooer</code> 用户登录到系统，在 <code>macOS</code> 系统上这个 ~ 表示的路径应该就是 <code>/Users/mvooer</code> 。在 <code>Linux</code> 系统上，这个路径应该是 <code>/home/mvooer</code>。在 <code>Windows</code> 上，这个路径会是 <code>C:\Users\mvooer</code> 。</p>
+<p><code>.</code> （一个点），表示当前目录。比如 <code>./io/source</code> ，表示当前目录下面的 <code>io</code> 里的 <code>source</code> 所在的位置。</p>
+<p><code>..</code> （两个点），表示上一级目录。比如 <code>./io/source</code>，表示当前目录的上一级目录里面的 <code>io</code> 下面的 <code>source</code> 所在的位置。</p>
+
+    
+  </div>
+</article>
+
+
+   
+
+   
+  <div class="box-prev-next clearfix">
+    <a class="show pull-left" href="/K/08/17/cert/">
+        <i class="icon icon-angle-left"></i>
+    </a>
+    <a class="hide pull-right" href="/">
+        <i class="icon icon-angle-right"></i>
+    </a>
+  </div>
+
+
+
+
+</div>
+
+
+  <a id="backTop" class="back-top">
+    <i class="icon-angle-up"></i>
+  </a>
+
+
+
+
+  <div class="modal" id="modal">
+  <span id="cover" class="cover hide"></span>
+  <div id="modal-dialog" class="modal-dialog hide-dialog">
+    <div class="modal-header">
+      <span id="close" class="btn-close">关闭</span>
+    </div>
+    <hr>
+    <div class="modal-body">
+      <ul class="list-toolbox">
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/tag/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              标签
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/link/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              友链
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/search/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              搜索
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              主页
+            </a>
+          </li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+
+  
+      <div class="fexo-comments comments-post">
+    
+
+    
+
+
+
+
+    
+
+    
+	
+  </div>
+
+  
+
+  <script type="text/javascript">
+  function loadScript(url, callback) {
+    var script = document.createElement('script')
+    script.type = 'text/javascript';
+
+    if (script.readyState) { //IE
+      script.onreadystatechange = function() {
+        if (script.readyState == 'loaded' ||
+          script.readyState == 'complete') {
+          script.onreadystatechange = null;
+          callback();
+        }
+      };
+    } else { //Others
+      script.onload = function() {
+        callback();
+      };
+    }
+
+    script.src = url;
+    document.getElementsByTagName('head')[0].appendChild(script);
+  }
+
+  window.onload = function() {
+    loadScript('/js/bundle.js?235683', function() {
+      // load success
+    });
+  }
+</script>
+
+</body>
+</html>
