@@ -77,12 +77,12 @@ php -n xcat createAdmin #php xcat resetTraffic
 php xcat syncusers
 crontab -e  
 # 按键盘 Insert 添加
-## 30 22 * * * php /www/wwwroot/wish.n7then.com/xcat sendDiaryMail
-*/1 * * * * php /www/wwwroot/wish.n7then.com/xcat synclogin
-## */1 * * * * php /www/wwwroot/wish.n7then.com/xcat syncvpn
-0 0 * * * php -n /www/wwwroot/wish.n7then.com/xcat dailyjob
-*/1 * * * * php /www/wwwroot/wish.n7then.com/xcat checkjob
-*/1 * * * * php -n /www/wwwroot/wish.n7then.com/xcat syncnas
+## 30 22 * * * php /www/wwwroot/website.org/xcat sendDiaryMail
+*/1 * * * * php /www/wwwroot/website.org/xcat synclogin
+## */1 * * * * php /www/wwwroot/website.org/xcat syncvpn
+0 0 * * * php -n /www/wwwroot/website.org/xcat dailyjob
+*/1 * * * * php /www/wwwroot/website.org/xcat checkjob
+*/1 * * * * php -n /www/wwwroot/website.org/xcat syncnas
 # 最后按键盘 Insert Esc :wq 退出并保存  
 ```
 
