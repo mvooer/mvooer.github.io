@@ -6,18 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="">
-  <title>Tag: note | I/O - mvooer</title>
+  <title>一个魔改魔改版本的说明 | I/O - mvooer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Reading Writing Thinking">
-<meta property="og:type" content="website">
-<meta property="og:title" content="I&#x2F;O - mvooer">
-<meta property="og:url" content="/tags/note/index.html">
+  <meta name="description" content="注意：resources\views\material\admin122 需要重命名为 resources\views\material\admin">
+<meta name="keywords" content="linux,bt,centos,debian,bbr">
+<meta property="og:type" content="article">
+<meta property="og:title" content="一个魔改魔改版本的说明">
+<meta property="og:url" content="/K/08/08/modx/index.html">
 <meta property="og:site_name" content="I&#x2F;O - mvooer">
-<meta property="og:description" content="Reading Writing Thinking">
+<meta property="og:description" content="注意：resources\views\material\admin122 需要重命名为 resources\views\material\admin">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2017-09-14T13:32:22.166Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="I&#x2F;O - mvooer">
-<meta name="twitter:description" content="Reading Writing Thinking">
+<meta name="twitter:title" content="一个魔改魔改版本的说明">
+<meta name="twitter:description" content="注意：resources\views\material\admin122 需要重命名为 resources\views\material\admin">
   
   
     <link rel="icon" href="/favicon.png">
@@ -129,114 +131,134 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-modx" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/K/08/22/cli/" class="archive-article-date">
-  	<time datetime="2017-08-22T03:34:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-22</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/K/08/22/cli/">CLI</a>
+    <h1 class="article-title" itemprop="name">
+      一个魔改魔改版本的说明
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/K/08/08/modx/" class="archive-article-date">
+  	<time datetime="2017-08-07T23:25:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-08</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>注意：<code>resources\views\material\admin122</code> 需要重命名为 <code>resources\views\material\admin</code></p>
+<a id="more"></a>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime</div><div class="line">yum install -y wget</div><div class="line">yum -y groupinstall &quot;Development Tools&quot;</div><div class="line">wget https://github.com/jedisct1/libsodium/releases/download/1.0.13/libsodium-1.0.13.tar.gz</div><div class="line">tar xf libsodium-1.0.13.tar.gz &amp;&amp; cd libsodium-1.0.13</div><div class="line">./configure &amp;&amp; make -j2 &amp;&amp; make install</div><div class="line">echo /usr/local/lib &gt; /etc/ld.so.conf.d/usr_local_lib.conf</div><div class="line">ldconfig</div><div class="line"></div><div class="line">cd /root</div><div class="line">yum -y install python-setuptools</div><div class="line">easy_install pip</div><div class="line">yum install -y git</div><div class="line">git clone -b manyuser https://github.com/glzjin/shadowsocks.git</div><div class="line">yum -y install python-devel</div><div class="line">yum -y install libffi-devel</div><div class="line">yum -y install openssl-devel</div><div class="line">cd shadowsocks</div><div class="line">pip install -r requirements.txt</div><div class="line">cp apiconfig.py userapiconfig.py</div><div class="line">cp config.json user-config.json</div><div class="line">vi userapiconfig.py</div></pre></td></tr></table></figure>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">cli</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">note</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">basic</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/K/08/02/linux/" class="archive-article-date">
-  	<time datetime="2017-08-02T02:49:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-02</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/K/08/02/linux/">Linux 填坑记</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">note</a>
-        		</li>
-      		 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">freedom</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">bt</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">centos</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">debian</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">bbr</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/K/08/08/mod/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          魔改 填坑记
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/K/08/02/linux/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Linux 填坑记</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    目录，不存在的…
+                    </div>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -259,9 +281,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
