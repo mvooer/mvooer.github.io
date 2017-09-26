@@ -72,7 +72,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: fexo
+theme: yilia
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -80,4 +80,4 @@ deploy:
 - type: git
   repo: git@github.com:mvooer/mvooer.github.io.git
 - type: git
-  repo: git@git.oschina.net:mvooer/mvooer.git
+  repo: git@gitee.com:mvooer/mvooer.git

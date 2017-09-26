@@ -2,9 +2,9 @@
 title: Linux 填坑记
 date: 2017-08-02 10:49:54
 tags:
-- linux
-- freedom
-- note
+ - linux
+ - freedom
+ - note
 ---
 
 ## 常用命令
@@ -14,7 +14,7 @@ nano
 apt-get update  # apt-get upgrade
 apt-get autoclean atuoremove
 ```
-
+<!--more-->
 
 -------------------------
 

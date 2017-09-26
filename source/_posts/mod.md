@@ -2,11 +2,11 @@
 title: 魔改 填坑记
 date: 2017-08-08 07:25:46
 tags:
-- linux
-- bt
-- centos
-- debian
-- bbr
+ - linux
+ - bt
+ - centos
+ - debian
+ - bbr
 ---
 
 ## 基础环境
@@ -14,6 +14,8 @@ tags:
 ### 宝塔
 
 [BT](https://bt.cn)
+
+<!--more-->
 
 ### HTTPS
 
@@ -135,7 +137,7 @@ chkconfig iptables off # 重启后永久关闭 iptabls 不要卸载.. #   rpm -e
 ----------------------------
 
 
-## 拜谢
+## 鸣谢
 - orvice
 - esdeathlove
 - glzjin

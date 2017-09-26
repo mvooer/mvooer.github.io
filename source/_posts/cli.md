@@ -1,15 +1,15 @@
 ---
 title: CLI
+date: 2017-08-22 11:34:31
 tags:
   - cli
   - note
   - basic
-date: 2017-08-22 11:34:31
 ---
 
-## CLI WTF?
+## CLI ?
 
-`CLI` 是 `command-line interface`的缩写,中文叫做 `命令行界面`.
+`CLI` 是 `command-line interface`的缩写,中文叫做 `命令行界面`.<!--more-->
 
 ### Why use CLI?
 
