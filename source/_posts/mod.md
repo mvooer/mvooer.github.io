@@ -95,15 +95,32 @@ crontab -e
 ## 后端
 
 ```shell
-yum -y groupinstall "Development Tools" && yum -y install wget && wget https://github.com/jedisct1/libsodium/releases/download/1.0.13/libsodium-1.0.13.tar.gz && tar xf libsodium-1.0.13.tar.gz && cd libsodium-1.0.13 && ./configure && make -j2 && make install && echo /usr/local/lib > /etc/ld.so.conf.d/usr_local_lib.conf && ldconfig && rm -rf /root/libsodium-1.0.11.tar.gz && cd /root
+yum -y install epel-release
+yum -y groupinstall "Development Tools" && yum -y install wget && wget https://github.com/jedisct1/libsodium/releases/download/1.0.15/libsodium-1.0.15.tar.gz && tar xf libsodium-1.0.15.tar.gz && cd libsodium-1.0.15 && ./configure && make -j2 && make install && echo /usr/local/lib > /etc/ld.so.conf.d/usr_local_lib.conf && ldconfig && rm -rf /root/libsodium-1.0.15.tar.gz && cd /root
 git clone -b manyuser https://github.com/esdeathlove/shadowsocks.git
 cd shadowsocks
 yum -y install python-devel && yum -y install libffi-devel && yum -y install openssl-devel
 pip install -r requirements.txt # Debian pip install cymysql
-cp apiconfig.py userapiconfig.py
-cp config.json user-config.json
+cp apiconfig.py userapiconfig.py && cp config.json user-config.json
 service iptables stop
 chkconfig iptables off # 重启后永久关闭 iptabls 不要卸载.. #   rpm -e epel-release-6-8.noarch
+
+Debian
+apt-get install build-essential wget -y
+wget https://github.com/jedisct1/libsodium/releases/download/1.0.15/libsodium-1.0.15.tar.gz && tar xf libsodium-1.0.15.tar.gz && cd libsodium-1.0.15 && ./configure && make -j2 && make install
+git clone -b manyuser https://github.com/esdeathlove/shadowsocks.git
+
+apt-get install python-pip git -y
+pip install cymysql
+cd ..
+git clone -b manyuser https://github.com/glzjin/shadowsocks.git
+cd shadowsocks
+chmod +x *.sh
+# 配置程序
+cp apiconfig.py userapiconfig.py
+cp config.json user-config.json
+vi userapiconfig.py
+
 ```
 
 
